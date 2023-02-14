@@ -351,30 +351,19 @@ footer{
   padding: 0 5px;
 }
 
-
-.gallery a.flex-column,
-.gallery div.flex-column {
+.gallery .flex-column img,
+.gallery .flex-column
+.gallery div.flex-column{
   padding: 15px;
   cursor: default;
-}
-
-.gallery .flex-column img,
-.gallery .flex-colum
-.gallery div.flex-column {
-  border-radius: 2px;
-  width: 100%;
+  border-radius: 25px;
+  width: 80%;
   background-size: 30px 30px;
   background-position: center;
   min-height: 50px;
-}
-
-.gallery a.flex-column
-.gallery div.flex-column
-.gallery a.flex-column
-.gallery div.flex-column {
   width: 100%;
   text-align: center;
-}
+} 
 
 .add-top-margin {
   margin-top: 15px;
@@ -405,3 +394,4 @@ footer{
     flex: 1 0 25%;
     max-width: 25%;
   }
+
