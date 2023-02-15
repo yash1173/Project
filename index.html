@@ -8,10 +8,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+  <script>
+    $(document).ready(function(){
+    $(".navbar .nav-link").on('click', function(event) {
 
-  <!--<link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <script src="js/menu.js"></script>-->
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
+});
+  </script>
 <body>
 
   <!-- <div class="topnav">
@@ -22,54 +37,34 @@
     <a href="/login/login.html" class="split">Login</a>
   </div> -->
 
-  <div id="menu-bar">
+  <div id="menu-bar" data-targat.="navbar">
             
     <ul >
         <li class="active"><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="#aboutus"><i class="fa-solid fa-user"></i>About Us</a>
+        <li><a href="#explore"><i class="fa-solid"></i>Explore</a>
         <div id="sub-menu-1">
             <ul>
-                <li><a href=#>Vision</a></li>
-                <li><a href=#>Mission</a></li>
-                <li><a href=#>Team</a></li></li>
+                <li><a href=#>Tourist Places</a></li>
+                <li><a href=#>Temples</a></li>
+                <li><a href=#>Historical Places</a></li></li>
+                <li><a href="#">Hotels</a></li>
             </ul>
         </div>
-        <li><a href="/Places/places.html"><i class="fa-solid fa-gears"></i>Services</a></li>
-        <li><a href="/login/login.html"><i class="fa-solid fa-handshake"></i>Login</a></li>
-        <li><a href="#training"><i class="fa-solid fa-person-chalkboard"></i>Training</a>
+        <li><a href="/Places/places.html"><i class="fa-solid"></i>Services</a></li>
+        <li><a href="/login/login.html"><i class="fa-solid fa-user"></i>Login</a></li>
+        <li><a href="#BeingPunekar"><i class="fa-solid"></i>Being Punekar</a>
             <div id="sub-menu-1">
                 <ul>
-                    <li class="hoverme"><a href=#>Web designing</a><i class="fa-solid fa-angle-right"></i>
-                        <div id="sub-menu-2">
-                            <ul>
-                                <li><a href=#>HTML</a></li>
-                                <li><a href=#>CSS & Bootstrap</a></li>
-                                <li><a href=#>javascript</a></li>
-                                <li><a href=#>Angular JS</a></li>
-                                <li><a href=#>Node JS</a></li>
-                            </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=#>Java</a></li>
-                    <li><a href=#>C++</a></li>
-                    <li><a href=#>Python</a></li>
-                </li>
+                    <li><a href=#>Puneri Patya</a></li>
+                    <li><a href=#>Just Puneri things</a></li>
+                    <li><a href=#>Interesting Facts About Pune</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href=""><i class="fa-solid fa-headset"></i>Contact Us</a></li>
+        <li><a class="navlink1" href="#footer-id"><i class="fa-solid fa-headset"></i>Contact Us</a></li>
     </ul></div>
       
 </div>
-
-  <div class="container">
-    <!--<button style="align-items: center;" class="btn">
-      <span class="btn-txt">Explore More</span>
-    </button>
-    <button style="align-items: center;" class="btn">
-      <span class="btn-txt">Famous Hotels</span>-->
-  </div>
   
 <div class="menu-container"></div>
   <div class="content-container">
@@ -133,7 +128,7 @@
     All those who are up for a little adventure can plan to explore the amusment parks of Pune. A few if the entertainment zones
     that promise unlimited fun and joy are Appu Ghar, Sentosa Water Park, and Panshet Water Park. In addition to all this, Pune also features an
     Amanora Mall where you can eat,shop, and chill around as much as you want. Entry to the mall is free for people of all ages and it remains
-    open from 11:00 AM to 10:00 PM every day i.e., from Monday to Sunday.
+    open from 10:00 AM to 10:00 PM every day i.e., from Monday to Sunday.
   </p>
   <p class="text1">
     Other sughtseeing places in Pune that deserve your attention at last once for sure are Raja Dinkar Kelkar Museum, Peacock Bay, National War MEmorial. David Synagoue,
@@ -144,7 +139,7 @@
 </div>
 </div>
 <!-- Footer -->
-  <footer>
+  <footer id="footer-id">
     <div class="container-footer">
         <div class="row-footer">
               <div class="col-footer" id="company">

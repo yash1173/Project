@@ -70,7 +70,7 @@ img {
   box-sizing: border-box; 
 }
 .showcase{
-  background: url(img2.jpg) no-repeat center/cover;
+  /* background: url(img2.jpg) no-repeat center/cover; */
   margin:0px;
   padding:0px;
   width:100%;
@@ -199,7 +199,8 @@ img {
 }
 
 .text{
-  line-height: 1.9;
+  line-height: 1.5;
+  margin: 25px auto;
 }
 
 .visit{
