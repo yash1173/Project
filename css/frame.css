@@ -70,7 +70,7 @@ img {
   box-sizing: border-box; 
 }
 .showcase{
-  /* background: url(img2.jpg) no-repeat center/cover; */
+  background: url(img2.jpg) no-repeat center/cover;
   margin:0px;
   padding:0px;
   width:100%;
