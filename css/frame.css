@@ -70,7 +70,6 @@ img {
   box-sizing: border-box; 
 }
 .showcase{
-  background: url(img2.jpg) no-repeat center/cover;
   margin:0px;
   padding:0px;
   width:100%;
@@ -86,6 +85,9 @@ img {
   text-align:center;
   position: relative;
   z-index: 100;
+  /* top: 0;
+  left: 0;
+  width: 100%; */
 }
 #menu-bar ul {
   display: inline-flex;
@@ -140,8 +142,6 @@ img {
  
  border-bottom: 0;
 }
-
-
 
 /* Style the links inside the navigation bar */
 /* .topnav a {
